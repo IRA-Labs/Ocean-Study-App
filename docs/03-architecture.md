@@ -28,6 +28,14 @@ The app uses Expo with the default TypeScript template and Expo Router. This giv
 | Images | Workspace-owned generated ocean assets imported through Expo. |
 | Quality | `npm run typecheck`, `npm run lint`, `npm test`, and manual QA checklist. |
 
+## Dependency Management
+
+- Dependabot is enabled for GitHub Actions and limited npm tooling updates.
+- Expo-managed runtime packages are intentionally ignored by Dependabot and should be upgraded through a planned Expo SDK compatibility review.
+- React, React DOM, React Native, Expo packages, and AsyncStorage must stay aligned with the supported Expo SDK versions.
+- Tooling major versions, such as ESLint major upgrades, should be handled in a dedicated branch with config migration notes.
+- Dependency PRs can be merged only when CI passes and the update does not conflict with the Expo compatibility set.
+
 ## Engineering Standards
 
 - Keep content typed and source-aware.
