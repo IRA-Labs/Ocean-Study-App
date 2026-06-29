@@ -1,0 +1,51 @@
+name: Bug Report
+description: Report a defect in the Ocean Study App.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Ocean Study App.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the issue and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open...
+        2. Tap...
+        3. See...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Study
+        - Explore
+        - Topic guide
+        - Article reader
+        - Saved
+        - Ocean Atlas
+        - Documentation
+        - Build or tooling
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device or environment
+      placeholder: iPhone 15, Android device, Expo web, etc.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or notes
+      description: Add screenshots, logs, or extra context if useful.

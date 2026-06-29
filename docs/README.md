@@ -13,6 +13,7 @@ This folder contains the planning, product, engineering, design, and QA document
 | [05-qa-plan.md](./05-qa-plan.md) | QA strategy, smoke checks, regression coverage, and release gates. |
 | [06-release-notes.md](./06-release-notes.md) | Current release notes, verification, limitations, and handoff notes. |
 | [07-backlog.md](./07-backlog.md) | Prioritized product and engineering backlog. |
+| [08-governance.md](./08-governance.md) | Public repository settings, branch protection target, ownership, and issue triage. |
 
 ## Documentation Standards
 

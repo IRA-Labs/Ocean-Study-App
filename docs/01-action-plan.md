@@ -41,7 +41,7 @@ Ocean Study App is a React Native Expo mobile learning product for people intere
 | --- | --- | --- | --- | --- | --- | --- |
 | A-000 | Done | Project Manager | Create the initial documentation folder and action plan. | `docs/README.md`, `docs/01-action-plan.md` | Docs folder exists and includes a trackable action plan. | File review. |
 | A-001 | Done | Tech Lead | Initialize or connect the local workspace to the IRA Labs repository. | Git repository with correct remote. | `origin` points to `https://github.com/IRA-Labs/Ocean-Study-App.git`. | `git remote -v`. |
-| A-002 | Done | Tech Lead | Define branch strategy for release development. | Branch policy note in docs. | Default branch, feature branch naming, and PR rules are documented. | Docs review. |
+| A-002 | Done | Tech Lead | Define branch strategy for release development. | Branch policy note in docs. | Default branch, feature branch naming, PR rules, and branch protection target are documented. | Docs review. |
 | A-003 | Done | Project Manager | Define milestone schedule for release delivery. | Milestone section in docs. | MVP, polish, QA, and release-readiness milestones are dated or sequenced. | Docs review. |
 | A-004 | Done | Tech Lead | Add repository standards. | `README.md`, `.gitignore`, contribution notes. | Project setup, commands, and contribution expectations are clear. | File review. |
 | A-005 | Done | QA Lead | Define definition of done. | Definition of done section in docs. | Each feature requires implementation, tests/checks, accessibility review, and docs update where relevant. | Docs review. |
@@ -100,7 +100,7 @@ Ocean Study App is a React Native Expo mobile learning product for people intere
 | A-052 | Done | Senior Software Engineer | Add test framework. | Jest or Expo-compatible test setup. | At least one sample test runs. | `npm test`. |
 | A-053 | Done | Senior Software Engineer | Add path aliases if useful. | TypeScript config. | Imports remain readable and build-compatible. | TypeScript check. |
 | A-054 | Done | Tech Lead | Add environment variable policy. | `.env.example` and docs. | Required variables are documented; no real secrets are committed. | File review. |
-| A-055 | Done | Tech Lead | Add CI workflow plan or implementation. | GitHub Actions workflow. | Install, lint, test, type-check, audit threshold, and web export are covered. | CI run. |
+| A-055 | Done | Tech Lead | Add CI workflow plan or implementation. | GitHub Actions workflow. | Install, lint, test, type-check, audit threshold, web export, and public repo governance are covered. | CI run. |
 
 ### Phase 6: Core App Foundation
 

@@ -1,0 +1,36 @@
+name: Content Review
+description: Request review for ocean learning content, sources, or media.
+title: "[Content]: "
+labels:
+  - content
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: Content area
+      description: Which topic, article, fact, quiz, glossary entry, or media asset needs review?
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Review need
+      description: Accuracy, clarity, age appropriateness, source quality, licensing, or another concern.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Suggested sources
+      description: Add reputable references if available.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Release blocker
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
