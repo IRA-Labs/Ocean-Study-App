@@ -13,7 +13,7 @@
 
 | ID | Item | Reason |
 | --- | --- | --- |
-| B-010 | Add glossary route | Help new learners understand ocean science terms. |
+| B-010 | Completed: add glossary route | Help new learners understand ocean science terms. |
 | B-011 | Add progress indicators per topic | Make repeat study more rewarding. |
 | B-012 | Add content provenance fields for generated assets | Improve release auditability. |
 | B-013 | Completed: CI workflow for install, lint, typecheck, tests, audit threshold, and web export | Protect the public release branch. |

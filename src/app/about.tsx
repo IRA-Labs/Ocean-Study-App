@@ -16,6 +16,8 @@ import {
 } from '@/data/oceanKnowledge';
 import { useTheme } from '@/hooks/use-theme';
 
+const glossaryPreview = glossaryEntries.slice(0, 6);
+
 export default function OceanAtlasScreen() {
   const theme = useTheme();
 
@@ -105,10 +107,19 @@ export default function OceanAtlasScreen() {
 
           <View style={styles.sectionHeader}>
             <ThemedText type="subtitle">Glossary</ThemedText>
+            <Link href="/glossary" asChild>
+              <Pressable
+                accessibilityRole="button"
+                style={({ pressed }) => [styles.secondaryButton, pressed && styles.pressed]}>
+                <ThemedText type="smallBold" themeColor="tint">
+                  Open glossary
+                </ThemedText>
+              </Pressable>
+            </Link>
           </View>
 
           <View style={styles.stack}>
-            {glossaryEntries.map((entry) => (
+            {glossaryPreview.map((entry) => (
               <ThemedView
                 key={entry.term}
                 type="card"
@@ -270,6 +281,12 @@ const styles = StyleSheet.create({
   },
   primaryButtonText: {
     color: '#FFFFFF',
+  },
+  secondaryButton: {
+    minHeight: 44,
+    borderRadius: 8,
+    justifyContent: 'center',
+    paddingHorizontal: Spacing.two,
   },
   pressed: {
     opacity: 0.72,

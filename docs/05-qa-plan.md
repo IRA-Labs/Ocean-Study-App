@@ -25,7 +25,8 @@
 - Topic guide pages open from Explore and show related articles.
 - Article pages open and save/remove actions update the Saved tab.
 - Saved tab shows empty, loading, and saved states.
-- Atlas tab shows ocean learning modules, facts, and glossary entries.
+- Atlas tab shows ocean learning modules, facts, and glossary preview.
+- Glossary route opens from Atlas and supports search, letter filters, empty states, definitions, and examples.
 - Source links open externally or in the in-app browser.
 - UI remains readable in light and dark mode.
 

@@ -69,4 +69,5 @@ The app uses Expo with the default TypeScript template and Expo Router. This giv
 | `/topic/[id]` | Topic guide with articles and quiz check. |
 | `/article/[id]` | Article reader with source link and save action. |
 | `/saved` | Locally persisted saved article list. |
-| `/about` | Ocean Atlas with learning modules, fact cards, and glossary entries. |
+| `/about` | Ocean Atlas with learning modules, fact cards, and glossary preview. |
+| `/glossary` | Searchable glossary with alphabet filters, definitions, and examples. |

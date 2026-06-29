@@ -2,6 +2,7 @@ import {
   oceanArticles,
   oceanTopics,
   quizQuestions,
+  type GlossaryEntry,
   type OceanArticle,
   type OceanTopic,
   type QuizQuestion,
@@ -66,6 +67,23 @@ export function getQuizForTopic(topicId: string, questions: QuizQuestion[] = qui
 
 export function isCorrectAnswer(question: QuizQuestion, answerIndex: number) {
   return question.correctAnswer === answerIndex;
+}
+
+export function filterGlossaryEntries(entries: GlossaryEntry[], query: string, letter = 'All') {
+  const normalizedQuery = normalizeQuery(query);
+  const normalizedLetter = normalizeQuery(letter);
+
+  return entries.filter((entry) => {
+    const matchesLetter =
+      normalizedLetter === 'all' || entry.term.toLowerCase().startsWith(normalizedLetter);
+    const searchableText = `${entry.term} ${entry.definition} ${entry.example}`.toLowerCase();
+
+    return matchesLetter && (normalizedQuery.length === 0 || searchableText.includes(normalizedQuery));
+  });
+}
+
+export function getGlossaryLetters(entries: GlossaryEntry[]) {
+  return ['All', ...Array.from(new Set(entries.map((entry) => entry.term.charAt(0).toUpperCase())))];
 }
 
 export function getSavedArticles(savedArticleIds: string[], articles: OceanArticle[] = oceanArticles) {

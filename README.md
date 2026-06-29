@@ -2,7 +2,7 @@
 
 Ocean Study App is a React Native Expo learning app for people interested in ocean study.
 
-The current app includes an ocean-themed study dashboard, original ocean visuals, a source-linked knowledge base, searchable topic exploration, topic guides, article readers, saved articles with local persistence, an Ocean Atlas, glossary, learning modules, fact cards, and interactive quiz checks.
+The current app includes an ocean-themed study dashboard, original ocean visuals, a source-linked knowledge base, searchable topic exploration, topic guides, article readers, saved articles with local persistence, an Ocean Atlas, a dedicated searchable glossary, learning modules, fact cards, and interactive quiz checks.
 
 ## Tech Stack
 
@@ -56,7 +56,8 @@ docs/               Product, engineering, design, QA, and release docs
 - Topic guide pages with article lists, topic metadata, and quiz checks.
 - Article reader pages with takeaways, sections, source links, and save action.
 - Saved screen backed by local persistence.
-- Ocean Atlas with learning modules, fact cards, and glossary entries.
+- Ocean Atlas with learning modules, fact cards, and a glossary preview.
+- Dedicated glossary route with search, alphabet filters, definitions, and examples.
 
 ## Public Release Rules
 
