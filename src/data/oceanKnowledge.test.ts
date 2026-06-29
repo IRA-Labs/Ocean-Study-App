@@ -1,11 +1,13 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
-import { oceanArticles, oceanTopics, quizQuestions } from './oceanKnowledge.ts';
+import { glossaryEntries, oceanArticles, oceanTopics, quizQuestions } from './oceanKnowledge.ts';
 import {
+  filterGlossaryEntries,
   filterTopics,
   getArticleById,
   getArticlesForTopic,
+  getGlossaryLetters,
   getQuizForTopic,
   getSavedArticles,
   getTopicById,
@@ -59,5 +61,16 @@ describe('ocean knowledge utilities', () => {
       assert.ok(getTopicById(article.topicId), `${article.id} has a missing topic`);
       assert.ok(getArticleById(article.id), `${article.id} can be found`);
     }
+  });
+
+  it('filters glossary entries by query and starting letter', () => {
+    const queryMatches = filterGlossaryEntries(glossaryEntries, 'light');
+    const letterMatches = filterGlossaryEntries(glossaryEntries, '', 'B');
+    const letters = getGlossaryLetters(glossaryEntries);
+
+    assert.equal(queryMatches.some((entry) => entry.term === 'Bioluminescence'), true);
+    assert.equal(letterMatches.every((entry) => entry.term.startsWith('B')), true);
+    assert.equal(letters.includes('All'), true);
+    assert.equal(letters.includes('B'), true);
   });
 });

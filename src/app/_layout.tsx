@@ -76,6 +76,7 @@ export default function RootLayout() {
         />
         <Tabs.Screen name="topic/[id]" options={{ href: null }} />
         <Tabs.Screen name="article/[id]" options={{ href: null }} />
+        <Tabs.Screen name="glossary" options={{ href: null }} />
       </Tabs>
     </ThemeProvider>
   );

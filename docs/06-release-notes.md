@@ -9,7 +9,8 @@ Ocean Study App now has a complete learning-app MVP:
 - Topic guide route with metadata, related articles, and topic quiz.
 - Article reader route with takeaways, body sections, source link, and save action.
 - Saved tab with local persistence through AsyncStorage.
-- Ocean Atlas tab with learning modules, fact cards, and glossary entries.
+- Ocean Atlas tab with learning modules, fact cards, and glossary preview.
+- Dedicated glossary route with search, alphabet filters, definitions, examples, and empty state.
 - Documentation for product scope, architecture, design, QA, release notes, and backlog.
 - Ocean-themed app icon, favicon, splash, and adaptive Android icon assets replacing Expo starter branding.
 - GitHub Actions CI for install, typecheck, lint, tests, production audit threshold, and web export verification.
